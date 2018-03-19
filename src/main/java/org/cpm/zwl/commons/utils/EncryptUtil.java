@@ -17,6 +17,14 @@ public class EncryptUtil {
 
   /**
    * AES encrypt
+   * 
+   * @param key
+   * @param initVector
+   * @param value
+   * @param model
+   * @param padding
+   * @return
+   * @throws Exception
    */
   public static String aesEncrypt(String key, String initVector, String value, String model,
       String padding) throws Exception {
@@ -33,6 +41,14 @@ public class EncryptUtil {
 
   /**
    * AES decrypt
+   * 
+   * @param key
+   * @param initVector
+   * @param encrypted
+   * @param model
+   * @param padding
+   * @return
+   * @throws Exception
    */
   public static String aesDecrypt(String key, String initVector, String encrypted, String model,
       String padding) throws Exception {
@@ -49,6 +65,10 @@ public class EncryptUtil {
 
   /**
    * MD5 hash
+   * 
+   * @param value
+   * @return
+   * @throws NoSuchAlgorithmException
    */
   public static String md5Hash(String value) throws NoSuchAlgorithmException {
 
